@@ -1,0 +1,19 @@
+.colorContacto{
+    background: red;
+    box-shadow: 0px 0px 10px #000;
+
+}
+
+.colorContacto2{
+    background: green;
+    box-shadow: 0px 0px 10px #000;
+
+}
+
+
+.contenido{
+    display: grid;
+
+}
+
+
