@@ -4,25 +4,51 @@
 
 <!-- 
   </div> -->
-  <div class="container">
-</div>
-  <div class="h-100 row align-items-center justify-content-center" >
+
+<!--   <div class="h-75 w-75 row justify-content-center "  -->
+
+  <div class="h-100 row align-items-center justify-content-center " >
     <div class="h-75 w-75 row justify-content-center" 
+
     style="
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
                  -20px -20px 60px #ffffff;"
+    #cambiarTamaño
+    (window:resize)="onResize($event)"
     >
 
-    <div class="row">
-        <div class="col-xl-3 .col-md-12" style="background: red;">
-          1 of 2
+    
+
+        <div class="col-xl-3 d-none d-xl-block" style="background: red;">
+
+          full contactos
         </div>
-        <div class="col-xl-9" style="background: green;">
-          2 of 2
+
+        <div class="col-xl-9" style="background: green;"> 
+
+          <div class="row" style="height: 10%;">
+            <div class=" col" style="background: orange;">
+              contacto nombre
+            </div>
+          </div>
+
+          <div class="row" style="height: 75%;">
+            <div class=" col" style="background: blue;">
+              <app-vista-chat></app-vista-chat>
+            </div>
+          </div>
+
+          <div class="row row align-items-center justify-content-center" style="height: 15%;">
+            <div class="col" style="background: pink;"> <!-- ACA VA SER EL INPUT CHAT -->
+              <app-input-chat></app-input-chat>
+            </div>
+          </div>
+
         </div>
-      </div>
+
+
 
 
     </div>

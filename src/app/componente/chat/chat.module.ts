@@ -14,6 +14,10 @@ import { InputChatComponent } from './input-chat/input-chat.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    InputChatComponent,
+    VistaChatComponent
   ]
 })
 export class ChatModule { }
