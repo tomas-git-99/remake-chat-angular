@@ -11,37 +11,39 @@
     <div class="h-75 w-75 row justify-content-center" 
 
     style="
+    overflow:hidden;
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
                  -20px -20px 60px #ffffff;"
     #cambiarTamaño
     (window:resize)="onResize($event)"
+  
     >
 
     
 
-        <div class="col-xl-3 d-none d-xl-block" style="background: red;">
+        <div class="col-xl-3 d-none d-xl-block">
 
-          full contactos
+          <app-contactos></app-contactos>
         </div>
 
-        <div class="col-xl-9" style="background: green;"> 
+        <div class="col-xl-9" > 
 
           <div class="row" style="height: 10%;">
-            <div class=" col" style="background: orange;">
-              contacto nombre
+            <div class=" col" >
+              <app-visual-contacto></app-visual-contacto>
             </div>
           </div>
 
-          <div class="row" style="height: 75%;">
-            <div class=" col" style="background: blue;">
+          <div class="row" style="height: 75%;  overflow-y: scroll;">
+            <div class=" col" style=" max-height:500px">
               <app-vista-chat></app-vista-chat>
             </div>
           </div>
 
           <div class="row row align-items-center justify-content-center" style="height: 15%;">
-            <div class="col" style="background: pink;"> <!-- ACA VA SER EL INPUT CHAT -->
+            <div class="col" > <!-- ACA VA SER EL INPUT CHAT -->
               <app-input-chat></app-input-chat>
             </div>
           </div>

@@ -35,6 +35,7 @@ p:last-child,ul:last-child{margin-bottom:0;}
 .avatar,.avatar .avatar-img{border-radius:50%;}
 .avatar{height:44px;width:44px;}
 .avatar-responsive.avatar{height:26px;width:26px;}
+
 @media (min-width:576px){
 .avatar-responsive.avatar{height:34px;width:34px;}
 }
@@ -161,4 +162,13 @@ p:last-child,ul:last-child{margin-bottom:0;}
 
 .message {
     background: none;
+    margin: 0px;
+}
+
+.message-text{
+    padding: 0.4rem .8rem;
+}
+
+.message-inner{
+    margin-bottom: -50px;
 }
